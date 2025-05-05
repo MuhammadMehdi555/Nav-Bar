@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #0f111a;
+    color: white;
+}
+.mai {
+    display: flex;
+    justify-content: center;
+    background-color: #1a1c2c;
+    padding: 10px 0;
+    height: aut;
+}
+.mainMenu {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px ;
+    border: 1px solid white;
+    box-shadow: 0px 0px 5px white;
+    border-radius: 10px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+ul {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+    font-size: 1.3rem;
+}
+ul li a {
+
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: white;
+        transition: transform 0.3s ease;
+        display: inline-block;
+        background-color:rgb(244, 244, 67);
+        color:#1a1c2c ;
+        width: 120px;
+        border-radius: 10px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        border: 1px solid white;
+        box-shadow: 0px 0px 5px white;
+      }
+      
+ul a:hover {
+    transform: scale(1.2);
+      }
+
+.dark {
+    width: 50px;
+    height: 20px;
+    border: 1px solid white;
+    box-shadow: 0 0 5px;
+    border-radius: 10px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+}
+.mod {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    margin-left: 0;
+    transition: margin-left 0.3s;
+}
+.mode-text {
+    font-size: 11px;
+    color: white;
+    font-weight: bold;
+    margin-left: 3px;
+    user-select: none;
+}
+.ic{
+    width: 30px;
+    height: 30px;
+    display: none;
+
+}
+.cli{
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+@media  (max-width: 900px) {
+    ul li a{
+        width: 80px;
+        gap: 5px;
+        font-size: 70%;
+    }
+    
+}
+@media (max-width:720px){
+    ul li a{
+        display: none;
+    }
+    .ic{
+        display: block;
+    }
+    .cli{
+        display: block;
+    }
+}
+@media (max-width:470px){
+    
+
+    .logo{
+        font-size: 1.3rem;
+        width: 70px;}
+
+}
